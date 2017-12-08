@@ -30,14 +30,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// TODO: Write your code here
+// TODO: DONE
 function multiply(a,b){
   var theProduct = a * b;
   var message = 'The product of ' + a + ' and ' + b + ' is ' + theProduct + '.';
   return [theProduct, message];
 }
 
-// TODO:
+// TODO: DONE
 multiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -53,13 +53,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// TODO: Write your code here
+// TODO: DONE
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+  var initialSum = sum(a,b);
+  var totalSum = sum(initialSum[0], c);
 
+  var initialProduct = multiply(a,b);
+  var totalProduct = multiply(initialProduct[0],c);
+
+  var message1 = a + ' and ' + b + ' and ' + c + ' sum to ' + totalSum[0] + '.';
+  var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + totalProduct[0] + '.';
+
+  return [totalSum[0], totalProduct[0], message1, message2];
 }
-
-// TODO: Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+// TODO: DONE
+sumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
