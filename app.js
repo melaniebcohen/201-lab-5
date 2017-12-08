@@ -14,6 +14,7 @@ For TODO item, be sure to change it to say DONE when you have successfully compl
 function sum(a,b){
   var theSum = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + theSum + '.';
+
   return [theSum, message];
 }
 
@@ -113,6 +114,7 @@ function multiplyArray(testArray){ //eslint-disable-line
   var totalProduct = multiply(initialProduct[0],testArray[2]);
 
   var message4 = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + totalProduct[0] + '.';
+
 
   return [totalProduct[0], message4];
 }
