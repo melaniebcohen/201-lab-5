@@ -18,7 +18,7 @@ function sum(a,b){
 }
 
 //TODO: DONE
-sum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -38,7 +38,7 @@ function multiply(a,b){
 }
 
 // TODO: DONE
-multiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -67,7 +67,7 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
   return [totalSum[0], totalProduct[0], message1, message2];
 }
 // TODO: DONE
-sumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
